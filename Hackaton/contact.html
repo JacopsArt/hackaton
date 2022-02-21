@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <nav class="top-menu">
+
+            <div><a href="index.html">Home</a></div>
+            <div><a href="portfolio.html">Portfolio</a></div>
+            <div><a href="about.html">About</a></div>
+            <div><a href="contact.html">Contact</a></div>
+
+        </nav>
+
+        <header class="header">
+            <h1>Contact</h1>
+        </header>
+
+        <main class="main">
+
+            <form class="contact-form" name="contact" method="POST" data-netlify="true">
+
+                <div class="form-group">
+                    <label>Naam: </label>
+                    <br />
+                    <input type="text" name="name" placeholder="J. Doe">
+                </div>
+
+                <div class="form-group">
+                    <label> Email: </label>
+                    <br />
+                    <input type="text" name="email" placeholder="J.Doe@mail.com">
+                </div>
+
+                <div class="form-group">
+                    <label>Telefoon</label>
+                    <br />
+                    <input type="number" placeholder="+31 6 12345678" name="phone">
+                </div>
+
+                <br />
+
+                <div class="choice-group form-group">
+                    <label>Ik heb een vraag/ opmerking over:</label>
+
+                    <div class="radio-groep">
+                        <label for="illustratie" class="radio">
+                            <input type="radio" name="choice" id="illustratie" class="choice__input" checked>
+                            <div class="radio__radio"></div>
+                            Illustratie
+                        </label>
+
+                        <label for="fotografie" class="radio">
+                            <input type="radio" name="choice" id="fotografie" class="choice__input">
+                            <div class="radio__radio"></div>
+                            Fotografie
+                        </label>
+
+                        <label for="website" class="radio">
+                            <input type="radio" name="choice" id="website" class="choice__input">
+                            <div class="radio__radio"></div>
+                            Website
+                        </label>
+
+                        <label for="anders" class="radio">
+                            <input type="radio" name="choice" id="anders" class="choice__input">
+                            <div class="radio__radio"></div>
+                            Anders
+                        </label>
+                    </div>
+                </div>
+
+                <br />
+
+                <div class="form-group">
+                    <label>Beschrijf je vraag/ opmerking:</label> 
+                    <textarea name="message" placeholder="Max. 3000 tekens" maxlength="3000"></textarea>
+                </div>
+
+                <br />
+
+                <div class="form-group form-group-btn2">
+                    <button type="reset" class="button sub-res-btn">Reset</button>
+                    <button type="submit" class="button sub-res-btn">Verzend</button>
+                </div>
+                <br />
+
+            </form>
+
+
+
+            <nav class="link-home">
+                <p class="button-tekst">
+                    Terug naar <a class="button" href="index.html" target="_blank">Home</a>
+                </p>
+            </nav>
+
+        </main>
+
+        <footer class="footer">
+            Copyright Jermaine Aroma 2022
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
